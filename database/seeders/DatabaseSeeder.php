@@ -15,8 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::statement('PRAGMA foreign_keys=off;');
-
+        // DB::statement('PRAGMA foreign_keys=off;');
         // Jalankan seeding
         $this->call([
             UserSeeder::class,
@@ -25,7 +24,7 @@ class DatabaseSeeder extends Seeder
             CatatSeeder::class,
         ]);
         
-        DB::statement('PRAGMA foreign_keys=on;');
+        // DB::statement('PRAGMA foreign_keys=on;');
         
     }
 }

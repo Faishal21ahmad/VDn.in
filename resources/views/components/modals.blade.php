@@ -5,7 +5,7 @@
         @csrf
             <!-- Form Title -->
             <h1 class="text-2xl font-bold text-center text-[#4A55A2] mb-6">
-                Add YouTube Video Form
+               Tambah Video
             </h1>
             <div class="flex flex-col md:flex-row md:space-x-6">
                 <!-- Thumbnail Section -->

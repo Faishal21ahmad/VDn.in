@@ -23,7 +23,8 @@
         </div>
         <button type="submit" class="w-40 py-2 mt-6 rounded-lg bg-[#4A55A2] text-white font-semibold hover:bg-[#3e4890]">Daftar</button>
     </form>
-    <p class="mt-6 text-sm text-gray-700">Sudah Punya Akun? 
-        <a href="/login" class="text-[#4A55A2] font-semibold hover:underline">Login disini!</a>
+    <p class="mt-6 text-sm text-gray-700">Sudah Punya Akun?
+        <a href="{{ url('/login') }}" class="text-[#4A55A2] font-semibold hover:underline">Login disini!</a>
     </p>
+    <a href="{{ url('/') }}" class="mt-6 text-sm text-[#4A55A2]"><-- Gak jadi</a>
 </x-layoutat>

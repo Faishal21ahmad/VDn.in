@@ -46,7 +46,7 @@
     </div>
 @endif
 
-    <x-navbar>{{ $user }}</x-navbar>
+    <x-navbar :data="$user"  />
     <main class="mx-auto max-w-[1850px] h-full p-4 mt-14">
         {{ $slot }}
     </main>

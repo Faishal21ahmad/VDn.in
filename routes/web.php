@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Dashboard;
+use App\Http\Controllers\Home;
 use App\Http\Controllers\PlayList;
 use App\Http\Controllers\PlayVid;
 use App\Http\Controllers\Profile;
@@ -9,10 +10,11 @@ use App\Http\Controllers\VideoList;
 use Illuminate\Support\Facades\Route;
 
 
+Route::get('/', [Home::class, 'dasar']);
 
 Route::middleware(['guest'])->group(function(){
-    Route::get('/login', [SesiAuth::class, 'getpagelogin']);
-    Route::get('/register', [SesiAuth::class, 'getpageregister']);
+    Route::get('/login', [SesiAuth::class, 'getpagelogin'])->name('login');
+    Route::get('/register', [SesiAuth::class, 'getpageregister'])->name('register');
 
 
     Route::post('/login', [SesiAuth::class, 'axlogin'])->name('login');

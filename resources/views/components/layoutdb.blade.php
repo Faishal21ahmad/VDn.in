@@ -65,7 +65,7 @@
         </div>
     @endif
     <!-- Navbar -->
-    <x-navbar>{{ $user }}</x-navbar>
+    <x-navbar :data="$user"  />
     <!-- Main Layout -->
     <div class="mx-auto max-w-[1722px] h-full p-4 mt-14 flex gap-2">
         <!-- Sidebar -->

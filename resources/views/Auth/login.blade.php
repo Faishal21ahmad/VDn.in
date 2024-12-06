@@ -15,6 +15,8 @@
     </form>
     </form>
     <p class="mt-6 text-sm text-gray-700">Sudah Punya Akun? 
-        <a href="/register" class="text-[#4A55A2] font-semibold hover:underline">Ayo Daftar!</a>
+        <a href="{{ url('/register') }}" class="text-[#4A55A2] font-semibold hover:underline">Ayo Daftar!</a>
     </p>
+    <a href="{{ url('/') }}" class="mt-6 text-sm text-[#4A55A2]"><-- Gak jadi</a>
+
 </x-layoutat>

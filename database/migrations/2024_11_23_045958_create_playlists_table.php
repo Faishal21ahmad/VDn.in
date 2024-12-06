@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('playlists', function (Blueprint $table) {
+            $table->engine = 'InnoDB'; 
             $table->id(); // Primary Key (auto increment)
             $table->string('nameplaylist');
             // $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
@@ -20,7 +21,6 @@ return new class extends Migration
                 indexName: 'playlist_user_id',
             );
             $table->timestamps();
-            // $table->engine = 'InnoDB'; 
         });
     }
 

@@ -12,16 +12,17 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('catats', function (Blueprint $table) {
+            $table->engine = 'InnoDB'; 
             $table->id(); // Primary Key (auto increment)
             $table->float('timevid'); // Waktu catatan
             $table->text('catat'); // Isi catatan
             // $table->foreignId('video_id')->constrained('videos')->onDelete('cascade'); // Foreign Key to videos
-            $table->foreignId('video_id')->constrained(
+            $table->unsignedBigInteger('video_id')->constrained(
                 table: 'videos',
                 indexName: 'catat_video_id',
             )->onDelete('cascade');
             $table->timestamps();
-            // $table->engine = 'InnoDB'; 
+            
         });
     }
 
