@@ -2,8 +2,8 @@
 
 ## VDn.in
 
-Video Note 
 
+VDn.in ( Video Note ) adalah platform unik yang dirancang untuk membantu Anda mencatat ide, wawasan, dan materi dari video YouTube. Dengan fitur unik kami, Anda dapat menambahkan catatan pada waktu tertentu dalam video, membuat playlist untuk mengelompokan video dengan mudah, dan mengakses kembali catatan Anda hanya dengan satu klik. Baik Anda seorang mahasiswa, profesional, atau kreator konten, VDN adalah alat yang sempurna untuk mendukung proses belajar dan kreativitas Anda.
 
 
 
